@@ -25,5 +25,6 @@ scp tibero_server:/opt/tmaxsoft/tibero6/client/win32/lib/libtbcli.dll .\win32\li
 * For example:
     * 例如：
 ```powershell
-.\install_tibero_driver.ps1 -target C:\tibero_client -server tibero_server
+.\install_tibero_driver.ps1 -server tibero_server -dsn tibero -target c:\opt\tibero6\client 
+.\install_tibero_driver.ps1 -server tibero_server -dsn tibero -target c:\opt\tibero6\client -bit 32
 ```
