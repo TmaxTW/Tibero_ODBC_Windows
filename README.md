@@ -4,11 +4,8 @@
     * 從 Tibero 安裝目錄中的 $TB_HOME/client 取得 win64/lib/libtbcli.dll 和 win32/lib/libtbcli.dll
 ```powershell
 cd Tibero_ODBC_Windows
-cd win64\lib
-scp tibero_server:/opt/tmaxsoft/tibero6/client/win64/lib/libtbcli.dll .
-cd ..\..
-cd win32\lib
-scp tibero_server:/opt/tmaxsoft/tibero6/client/win32/lib/libtbcli.dll .
+scp tibero_server:/opt/tmaxsoft/tibero6/client/win64/lib/libtbcli.dll .\win64\lib\
+scp tibero_server:/opt/tmaxsoft/tibero6/client/win32/lib/libtbcli.dll .\win32\lib\
 ```
   
 * Start PowerShell as Administrator and run
